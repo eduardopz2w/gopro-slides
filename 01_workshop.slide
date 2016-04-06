@@ -1,5 +1,5 @@
-Workshop de Go
 Despues de instalar Go
+Workshop de Go
 
 20:00 5 June 2014
 Tags: Go
@@ -20,7 +20,7 @@ Dependencias
 ** Descargar entorno de trabajo
 
 - Instalar el proyecto
-   
+
    $ git clone git@github.com:ivan-iver/vagrant-golang.git golang
 
 - Conocer lo que tenemos en nuestro entorno de trabajo
