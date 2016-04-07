@@ -1,0 +1,67 @@
+Concurrencia y Go rutinas
+Workshop de Go
+
+7 de abril 2016
+Tags: Go
+
+Iván Jaimes
+Backend developer, Iver
+
+* Workshop de Go
+** Concurrencia ¿Qué es?
+
+Es la composición de los cálculos de ejecución de forma independiente.
+Es una manera de estructurar el software, en particular como una forma de describir código limpio que interactúa bien con el mundo real.
+No es paralelismo.
+
+* Workshop de Go
+** Concurrencia no es paralelismo
+
+Concurrencia no es el paralelismo, aunque permite el paralelismo.
+Si se tiene sólo un procesador, el programa todavía puede ser concurrentes, pero no puede ser paralelas.
+Por otro lado, un programa concurrente bien escrito puede funcionar de manera eficiente en paralelo en un multiprocesador.
+Para más información sobre esta distinción, véase el siguiente enlace.
+
+.link golang.org/s/concurrency-is-not-parallelism
+
+* Workshop de Go
+** Concurrencia comunmente
+
+- Un solo código, multiples instancias ejecutandose
+- Un hilo por instancia (generalmente)
+- Desarrollador describe explicitamente que pasa y cuando
+
+* Workshop de Go
+** Concurrencia en go
+
+- Un solo código
+- Una instancia en ejecución (si, solo una)
+- Memoría compartida
+- Desarrolladores describen que pasa al mismo tiempo
+- Go decide en tiempo de ejecución como pasa
+- Concurrencia no es paralellismo
+
+* Workshop de Go
+** Concurrencia en go
+
+Tres elementos principales
+
+- Goroutines (go keyword) describe las unidades que lo ejecutan independientemente.
+- Channels (chan type) comunicación entre goroutines
+- Select elige entre los channels
+
+El paquete sync provee las primitivas de sincronización (sync.Mutex, sync.WaitGroup)
+
+* Workshop de Go
+** Conclusiones
+
+Las goroutines y los channels hacen más fácil el expresar operaciones complejas.
+
+- Multiples entradas
+- Multiples salidas
+- Timeouts
+- Fallas
+
+Y son divertidas!
+
+

@@ -1,0 +1,31 @@
+Día dos
+Curso avanzado de Go
+
+6 abril de 2016
+Tags: Go
+
+Iván Jaimes
+Backend developer, Iver
+
+* Objetivos
+** Del curso
+
+.image images/init.jpg 320 680
+
+Conocer el lenguaje desarrollando un chat server
+
+* Objetivos
+** Del día
+
+-  Acceso a la base de datos
+-  Unit Testing del modelo de datos
+-  Autenticación de usuarios
+-  Diseño de la pantalla de chat
+-  Refleja la base da datos en la pantalla
+
+* Acceso a datos
+** Entendiendo el acceso a datos
+
+.link http://go-database-sql.org/
+
+
