@@ -1,0 +1,106 @@
+Día uno
+Curso avanzado de Go
+
+5 abril de 2016
+Tags: Go
+
+Iván Jaimes
+Backend developer, Iver
+
+* Objetivos
+** Del curso
+
+.image images/init.jpg 320 680
+
+Conocer el lenguaje desarrollando un chat server
+
+* Objetivos
+** Del día
+
+.image images/revel.png 320 680
+
+Conocer las herramientas y entender su funcionamiento
+
+* Paquetes a utilizar
+** Herramientas
+
+- revel v.0.12.0:  web framework
+.link http://revel.github.io
+
+- upper.io db.v1:  database abstract library
+.link https://upper.io/db
+
+- goose:           database migration tool
+.link http://bitbucket.org/liamstask/goose
+
+* Instalar revel
+
+   $ go get -v -u github.com/revel/cmd/revel
+
+   github.com/revel/cmd (download)
+   github.com/agtorre/gocolorize (download)
+   github.com/revel/revel (download)
+   github.com/robfig/config (download)
+   github.com/robfig/pathtree (download)
+   golang.org/x/net (download)
+   gopkg.in/fsnotify.v1 (download)
+   github.com/revel/modules (download)
+   golang.org/x/net/websocket
+   github.com/revel/revel
+   github.com/revel/cmd/harness
+   github.com/revel/revel/testing
+   github.com/revel/modules/testrunner/app/controllers
+   github.com/revel/cmd/revel
+
+* Crear el proyecto
+
+  $ revel new platzi/chat
+
+  ~
+  ~ revel! http://revel.github.io
+  ~
+  Your application is ready:
+     /Users/Iver/Workspace/go/src/platzi/chat
+
+     You can run it with:
+        revel run platzi/chat
+
+* Personalizar el proyecto
+
+  $ revel new platzi/chat github.com/ivan-iver/platzi-chat
+  ~
+  ~ revel! http://revel.github.io
+  ~
+  Your application is ready:
+     /Users/Iver/Workspace/go/src/platzi/chat
+
+     You can run it with:
+        revel run platzi/chat
+
+Verificamos que se instaló correctamente
+
+  $ ls -al $GOPATH/src/platzi
+
+* Personalizar el proyecto
+
+  # suponiendo que tu ubicación actual es ~/platzi/curso/
+  # después de esto tu ubicaicón tendrá el directorio platzi
+
+  $ mv $GOPATH/src/platzi .
+  $ cd $GOPATH/src/
+  $ ln -s ~/platzi/golang/proyecto platzi
+
+* Ejecutamos el proyecto
+
+  $ revel run platzi/chat
+
+  ~
+  ~ revel! http://revel.github.io
+  ~
+  INFO  2016/04/05 15:47:49 revel.go:329: Loaded module static
+  INFO  2016/04/05 15:47:49 revel.go:329: Loaded module testrunner
+  INFO  2016/04/05 15:47:49 revel.go:206: Initialized Revel v0.12.0 (2015-03-25) for >= go1.3
+  INFO  2016/04/05 15:47:49 run.go:57: Running chat (platzi/chat) in dev mode
+  INFO  2016/04/05 15:47:49 harness.go:165: Listening on :9000
+
+

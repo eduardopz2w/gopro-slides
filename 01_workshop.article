@@ -1,0 +1,38 @@
+Despues de instalar Go
+Workshop de Go
+
+20:00 5 June 2014
+Tags: Go
+
+Iván Jaimes
+Backend developer, Iver
+
+* Workshop de Go
+
+** Después de instalar go
+Dependencias
+
+- VirtualBox
+- Vagrant
+- Proyecto personal de Config
+
+* Vagrant
+** Descargar entorno de trabajo
+
+- Instalar el proyecto
+
+   $ git clone git@github.com:ivan-iver/vagrant-golang.git golang
+
+- Conocer lo que tenemos en nuestro entorno de trabajo
+- Ventajas de lo que tenemos
+
+* Editores de texto
+- vim plugins
+  https://github.com/ivan-iver/vagrant-golang/blob/master/bin/golang.sh
+  https://godoc.org/golang.org/x/tools
+- visual studio code
+  https://code.visualstudio.com/Download
+  https://github.com/Microsoft/vscode-go
+- Sublime
+  https://www.sublimetext.com/
+
