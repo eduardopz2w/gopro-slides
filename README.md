@@ -1,6 +1,6 @@
 # Curso de Go avanzado
 
-Este repositorio contiene las presentaciones empleadas en el curso de Go avanzado, pueden emplearse utilizando la herramienta `present`.
+Este repositorio contiene las presentaciones empleadas en el curso de [Go avanzado](https://platzi.com/cursos/go-avanzado/), pueden emplearse utilizando la herramienta `present`.
 
 Para instalar `present`, puedes utilizar *go get*:
 
