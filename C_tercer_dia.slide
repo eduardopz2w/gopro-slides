@@ -1,0 +1,76 @@
+Día tres
+Curso avanzado de Go
+
+6 abril de 2016
+Tags: Go
+
+Iván Jaimes
+Backend developer, Iver
+
+http://iver.mx
+http://github.com/ivan-iver/
+@iver14
+
+* Objetivos
+** Del curso
+
+.image images/init.jpg 320 680
+
+Conocer el lenguaje desarrollando un chat server
+
+* Objetivos
+** Del día
+
+-  Agregar lógica en backend para chat
+-  Uso de goroutines (concurrencia)
+-  Pruebas en revel
+-  Uso de websocket
+
+* Vistazo a "container/list"
+
+.play code/list.go
+
+* Concurrencia
+
+* Concurrencia
+** Como es en Go
+
+- Un solo código
+- Una instancia en ejecución (si, solo una)
+- Memoría compartida
+- Desarrolladores describen que pasa al mismo tiempo
+- Go decide en tiempo de ejecución como pasa
+- [[https://www.youtube.com/watch?v=cN_DpYBzKso][Concurrencia no es paralellismo - En inglés]]
+
+* Tres elementos principales
+
+- Goroutines (`go` keyword) describe las unidades que lo ejecutan independientemente.
+- Channels (`chan` type) comunicación entre goroutines
+- Select elige entre los channels
+
+* Ejemplos
+** Multiples goroutine
+
+.play code/goroutines_exit.go /func main/,$
+
+El programa termina cuando la función main termina
+
+* WaitGroup
+.play code/goroutines.go /func main/,$
+
+* Elementos del chat
+
+- Usuario
+- Evento
+- Chatroom
+ - Suscripción
+ - Publicación
+ - Desuscripción
+
+* Tipos de actualización de mensaje
+
+- Refresh
+- Polling
+- WebSocket
+
+* Manos a la obra
